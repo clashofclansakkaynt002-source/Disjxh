@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>AI Car Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚗 AI CAR GAME</h1>
+
+<div id="menu">
+    <p>Обери машину</p>
+    <button onclick="selectCar('blue')">🔵</button>
+    <button onclick="selectCar('green')">🟢</button>
+    <button onclick="selectCar('yellow')">🟡</button><br><br>
+    <button onclick="startGame()">▶ START</button>
+</div>
+
+<canvas id="game" width="400" height="600"></canvas>
+
+<div class="info">
+    <p id="score">Score: 0</p>
+    <p id="best">Best: 0</p>
+    <p id="gameOver" class="hidden">💥 GAME OVER<br>Натисни R</p>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
